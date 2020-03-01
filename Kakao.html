@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <link href = "css.css" rel = "stylesheet">
+
 <html>
 <head>
  <meta charset="utf-8">
- <title>Резюме2</title>
+ <title>О себе</title>
  <meta name="viewport" content="width=divice-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -11,65 +12,55 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 <body>
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-dark bg-dark" style="background-color: white;" role="navigation">
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Menukakao">
-              <span class="icon-bar"></span>
-			  <span class="icon-bar"></span>
-			  <span class="icon-bar"></span>
-            </button>
+              <span class="glyphicon glyphicon-list-alt"></span>
+</button>
         <a class="navbar-brand" href="Kakao.html">О себе</a>
       <div class="collapse navbar-collapse" id="Menukakao">
-        <ul class="nav navbar-nav">
-		  <li><a href="http://edu.isuct.ru/">Сайт edu.isuct</a></li>
+		  <ul class="nav nav-pills" role="tablist">
+        <li class="nav-item active"><a href="#home" role="tab" data-toggle="pill"><i class="glyphicon glyphicon-home"></i> Домашняя сраница</a></li>
+        <li class="nav-item"><a href="#profile" role="tab" data-toggle="pill"><i class="glyphicon glyphicon-user"></i> Обо мне</a></li>
+        <li class="nav-item"><a href="#contacts" role="tab" data-toggle="pill"><i class="glyphicon glyphicon-earphone"></i> Контакты</a></li>
            <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Гайды по которым делал сайт<b class="caret"></b></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-align-left"></i> Гайды по которым делал сайт<b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li><a href="https://itproger.com/course/bootstrap">itProger</a></li>
               <li><a href="https://www.youtube.com/playlist?list=PL0lO_mIqDDFUQI5lrRlZfkApMWtJJ7GFE">Уроки Bootstrap верстки</a></li>
               <li><a href="https://bootstrap-4.ru/docs/4.4/getting-started/introduction/">Сайт Bootstrap</a></li>
             </ul>
-          </li>
-        </ul>  			
-      </div>
-    </div>
+           </li>
+          </ul>  			
+     </div>
   </nav>
   <div class="jumbotron">
   <div class="container">
-  <ul class="nav nav-pills" role="tablist">
-    <li class="active"><a href="#home" role="tab" data-toggle="pill">Домашняя сраница</a></li>
-    <li><a href="#profile" role="tab" data-toggle="pill">Обо мне</a></li>
-    <li><a href="#contacts" role="tab" data-toggle="pill">Контакты</a></li>
-  </ul>
   <div class="tab-content">
  <div role="tabpanel" class="tab-pane active fade in" id="home">
-	<h1>Домашняя страница</h1>
+	<h1><i class="icon-home icon-white"></i>Домашняя страница</h1>
 	 <p> Химтех лучше всех!</p>
 	 <div class="text-center">
-	    <img src="images/himteh.jpg" class="rounded" alt="">
+	    <img src="images/himteh.jpg" class="img-rounded" alt="">
      </div>
-
  </div>
- 
              <div role="tabpanel" class="tab-pane fade" id="profile">
 	 <h1>Обо мне</h1>
 	 <p> Богомазов Никита</p>
 	 <p> Далаю сайт на html (вроде даже удачно)</p>
-	    <img src="images/animepv.gif" class="rounded float-left" alt="">
+	    <img src="images/animepv.gif" class="img-rounded" alt="">
 	         </div>
     <div role="tabpanel" class="tab-pane fade" id="contacts">
 	<h1>Контакты</h1>
 	 <p>Контактов нет, но вы держитесь...</p>
-	 <div class="text-center">
-	    <img src="images/animetv.gif" class="rounded" alt="">
-			 <p data-toggle="collapse" href="#dich">Не нажимай на этот текст</p>
-       <div class="collapse" id="dich">
-        Ну и зачем?!
-       </div>
+	    <img src="images/animetv.gif" class="img-circle" alt="">
+	   		 <p data-toggle="collapse" href="#dich">Не нажимай на этот текст</p>
+     <div class="collapse" id="dich">
+        <h1><i class="glyphicon glyphicon-thumbs-down"></i> Ну и зачем?!</h1>
      </div>
     </div>
   </div>
- </div>
-
+  </div>
+  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
