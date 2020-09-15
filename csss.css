@@ -1,0 +1,18 @@
+body {
+    background-image: url("images/1234.jpg");
+}
+@media only screen and (max-width: 995px) {
+    .card-columns {
+        column-count: 2;
+    }
+}
+@media only screen and (max-width: 580px) {
+    .card-columns {
+        column-count: 1;
+    }
+}
+# With npm
+npm i @popperjs/core
+
+# With Yarn
+yarn add @popperjs/core
